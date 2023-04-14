@@ -5,7 +5,7 @@ from PIL import ImageDraw, ImageFont
 from fontTools.ttLib import TTFont
 from tqdm.contrib.concurrent import process_map
 
-from manga_ocr_dev.env import ASSETS_PATH, FONTS_ROOT
+from manga_abang_dev.env import ASSETS_PATH, FONTS_ROOT
 
 vocab = pd.read_csv(ASSETS_PATH / 'vocab.csv').char.values
 

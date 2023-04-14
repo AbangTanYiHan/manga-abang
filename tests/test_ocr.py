@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from manga_ocr import MangaOcr
+from manga_abang import MangaOcr
 
 TEST_DATA_ROOT = Path(__file__).parent / 'data'
 

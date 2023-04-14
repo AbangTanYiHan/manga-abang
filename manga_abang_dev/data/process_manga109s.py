@@ -5,7 +5,7 @@ import cv2
 import pandas as pd
 from tqdm import tqdm
 
-from manga_ocr_dev.env import MANGA109_ROOT
+from manga_abang_dev.env import MANGA109_ROOT
 
 
 def get_books():

@@ -1,7 +1,7 @@
 import pandas as pd
 import unicodedata
 
-from manga_ocr_dev.env import ASSETS_PATH, FONTS_ROOT
+from manga_abang_dev.env import ASSETS_PATH, FONTS_ROOT
 
 
 def get_background_df(background_dir):

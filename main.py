@@ -1,4 +1,4 @@
-from manga_ocr import MangaOcr
+from manga_abang import MangaOcr
 
 mocr = MangaOcr()
 text = mocr('clipboard')

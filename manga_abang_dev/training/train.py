@@ -2,10 +2,10 @@ import fire
 import wandb
 from transformers import Seq2SeqTrainer, Seq2SeqTrainingArguments, default_data_collator
 
-from manga_ocr_dev.env import TRAIN_ROOT
-from manga_ocr_dev.training.dataset import MangaDataset
-from manga_ocr_dev.training.get_model import get_model
-from manga_ocr_dev.training.metrics import Metrics
+from manga_abang_dev.env import TRAIN_ROOT
+from manga_abang_dev.training.dataset import MangaDataset
+from manga_abang_dev.training.get_model import get_model
+from manga_abang_dev.training.metrics import Metrics
 
 
 def run(

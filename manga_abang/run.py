@@ -10,7 +10,7 @@ from PIL import Image
 from PIL import UnidentifiedImageError
 from loguru import logger
 
-from manga_ocr import MangaOcr
+from manga_abang import MangaOcr
 
 page = 0
 picture = 0

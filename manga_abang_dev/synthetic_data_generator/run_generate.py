@@ -6,8 +6,8 @@ import fire
 import pandas as pd
 from tqdm.contrib.concurrent import thread_map
 
-from manga_ocr_dev.env import FONTS_ROOT, DATA_SYNTHETIC_ROOT
-from manga_ocr_dev.synthetic_data_generator.generator import SyntheticDataGenerator
+from manga_abang_dev.env import FONTS_ROOT, DATA_SYNTHETIC_ROOT
+from manga_abang_dev.synthetic_data_generator.generator import SyntheticDataGenerator
 
 generator = SyntheticDataGenerator()
 

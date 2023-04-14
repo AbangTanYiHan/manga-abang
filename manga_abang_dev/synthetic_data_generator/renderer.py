@@ -6,8 +6,8 @@ import cv2
 import numpy as np
 from html2image import Html2Image
 
-from manga_ocr_dev.env import BACKGROUND_DIR
-from manga_ocr_dev.synthetic_data_generator.utils import get_background_df
+from manga_abang_dev.env import BACKGROUND_DIR
+from manga_abang_dev.synthetic_data_generator.utils import get_background_df
 
 
 class Renderer:

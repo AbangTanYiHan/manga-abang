@@ -6,7 +6,7 @@ import pandas as pd
 import torch
 from torch.utils.data import Dataset
 
-from manga_ocr_dev.env import MANGA109_ROOT, DATA_SYNTHETIC_ROOT
+from manga_abang_dev.env import MANGA109_ROOT, DATA_SYNTHETIC_ROOT
 
 
 class MangaDataset(Dataset):
@@ -142,8 +142,8 @@ class MangaDataset(Dataset):
 
 
 if __name__ == '__main__':
-    from manga_ocr_dev.training.get_model import get_processor
-    from manga_ocr_dev.training.utils import tensor_to_image
+    from manga_abang_dev.training.get_model import get_processor
+    from manga_abang_dev.training.utils import tensor_to_image
 
     encoder_name = 'facebook/deit-tiny-patch16-224'
     decoder_name = 'cl-tohoku/bert-base-japanese-char-v2'

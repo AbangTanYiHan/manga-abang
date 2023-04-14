@@ -2,9 +2,9 @@ import budou
 import numpy as np
 import pandas as pd
 
-from manga_ocr_dev.env import ASSETS_PATH, FONTS_ROOT
-from manga_ocr_dev.synthetic_data_generator.renderer import Renderer
-from manga_ocr_dev.synthetic_data_generator.utils import get_font_meta, get_charsets, is_ascii, is_kanji
+from manga_abang_dev.env import ASSETS_PATH, FONTS_ROOT
+from manga_abang_dev.synthetic_data_generator.renderer import Renderer
+from manga_abang_dev.synthetic_data_generator.utils import get_font_meta, get_charsets, is_ascii, is_kanji
 
 
 class SyntheticDataGenerator:
