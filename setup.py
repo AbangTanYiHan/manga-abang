@@ -2,7 +2,7 @@
 Author: AbangTan tan_yihan@housei-inc.com
 Date: 2023-01-05 10:34:27
 LastEditors: AbangTan tan_yihan@housei-inc.com
-LastEditTime: 2023-04-14 17:49:11
+LastEditTime: 2023-04-14 17:58:19
 FilePath: /manga-ocr/setup.py
 Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 '''
@@ -13,7 +13,7 @@ long_description = (Path(__file__).parent / "README.md").read_text('utf-8').spli
 
 setup(
     name="manga-abang",
-    version='0.1',
+    version='0.1.1',
     description="OCR for Japanese manga",
     long_description=long_description,
     long_description_content_type="text/markdown",
