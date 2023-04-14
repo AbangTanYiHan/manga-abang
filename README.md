@@ -137,3 +137,9 @@ For any inquiries, please feel free to contact me at kha-white@mail.com
 This project was done with the usage of:
 - [Manga109-s](http://www.manga109.org/en/download_s.html) dataset
 - [CC-100](https://data.statmt.org/cc-100/) dataset
+
+Key functions
+-b : bubble + 1
+-x : box + 1
+-t : text + 1
+-z : page + 1
