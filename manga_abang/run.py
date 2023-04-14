@@ -92,7 +92,7 @@ def run(read_from='clipboard',
 
         if sys.platform not in ('darwin', 'win32'):
             msg = 'Reading images from clipboard works only on macOS and Windows. ' \
-                  'On Linux, run "manga_ocr /path/to/screenshot/folder" to read images from a folder instead.'
+                  'On Linux, run "manga_abang /path/to/screenshot/folder" to read images from a folder instead.'
             raise NotImplementedError(msg)
 
         from PIL import ImageGrab

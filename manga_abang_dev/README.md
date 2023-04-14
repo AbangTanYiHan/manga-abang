@@ -2,8 +2,8 @@
 
 ```
 assets/                       # assets (see description below)
-manga_ocr/                    # release code (inference only)
-manga_ocr_dev/                # development code
+manga_abang/                    # release code (inference only)
+manga_abang_dev/                # development code
    env.py                     # global constants
    data/                      # data preprocessing
    synthetic_data_generator/  # generation of synthetic image-text pairs
@@ -21,7 +21,7 @@ csv with columns:
 
 List of fonts with metadata used by synthetic data generator.
 Provided file is just an example, you have to generate similar file for your own set of fonts,
-using `manga_ocr_dev/synthetic_data_generator/scan_fonts.py` script.
+using `manga_abang_dev/synthetic_data_generator/scan_fonts.py` script.
 Note that `label` will be filled with `regular` by default. You have to label your special fonts manually.
 
 ### lines_example.csv
@@ -60,7 +60,7 @@ List of all characters supported by tokenizer.
     ```
 3. Preprocess Manga109-s with `data/process_manga109s.py`
 4. Optionally generate synthetic data (see below)
-5. Train with `manga_ocr_dev/training/train.py`
+5. Train with `manga_abang_dev/training/train.py`
 
 # Synthetic data generation
 

@@ -18,8 +18,8 @@ See also:
 - [Poricom](https://github.com/bluaxees/Poricom), a GUI reader, which uses manga-ocr
 - [mokuro](https://github.com/kha-white/mokuro), a tool, which uses manga-ocr to generate an HTML overlay for manga
 - [Xelieu's guide](https://rentry.co/lazyXel), a comprehensive guide on setting up a reading and mining workflow with manga-ocr/mokuro (and many other useful tips)
-- Development code, including code for training and synthetic data generation: [link](manga_ocr_dev)
-- Description of synthetic data generation pipeline + examples of generated images: [link](manga_ocr_dev/synthetic_data_generator)
+- Development code, including code for training and synthetic data generation: [link](manga_abang_dev)
+- Description of synthetic data generation pipeline + examples of generated images: [link](manga_abang_dev/synthetic_data_generator)
 
 # Installation
 
@@ -44,7 +44,7 @@ pip3 install manga-ocr
 ## Python API
 
 ```python
-from manga_ocr import MangaOcr
+from manga_abang import MangaOcr
 
 mocr = MangaOcr()
 text = mocr('/path/to/img')
@@ -55,7 +55,7 @@ or
 ```python
 import PIL.Image
 
-from manga_ocr import MangaOcr
+from manga_abang import MangaOcr
 
 mocr = MangaOcr()
 img = PIL.Image.open('/path/to/img')
@@ -79,11 +79,11 @@ https://user-images.githubusercontent.com/22717958/150238361-052b95d1-0152-485f-
 
 - To read images from clipboard and write recognized texts to clipboard, run in command line:
     ```commandline
-    manga_ocr
+    manga_abang
     ```
 - To read images from ShareX's screenshot folder, run in command line:
     ```commandline
-    manga_ocr "/path/to/sharex/screenshot/folder"
+    manga_abang "/path/to/sharex/screenshot/folder"
     ```
 Note that when running in the clipboard scanning mode, any image that you copy to clipboard will be processed by OCR and replaced
 by recognized text. If you want to be able to copy and paste images as usual, you should use the folder scanning mode instead
@@ -94,10 +94,10 @@ The OCR is ready to use after `OCR ready` message appears in the logs.
 
 - To see other options, run in command line:
     ```commandline
-    manga_ocr --help
+    manga_abang --help
     ```
 
-If `manga_ocr` doesn't work, you might also try replacing it with `python -m manga_ocr`.
+If `manga_abang` doesn't work, you might also try replacing it with `python -m manga_abang`.
 
 ## Usage tips
 
