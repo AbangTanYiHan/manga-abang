@@ -5,21 +5,26 @@ from loguru import logger
 
 
 
-def main(write_to='tl.txt'):
+def main(write_to='clipboard'):
     page = 0
     picture = 1
     box = 0
     text = 0
     bubble = 0
-    file = Path(write_to)
-    if file.suffix != '.txt':
-        raise ValueError('write_to must be either "clipboard" or a path to a text file')
+    
+    if write_to == 'clipboard':
+        raise ValueError('write_to must be a path to a text file')
+    write_to = Path(write_to)
+    if write_to.suffix != '.txt':
+        raise ValueError('write_to must be a path to a text file')
+    logger.info('Using CPU')
+    logger.info('typewriter start')
     while True:
-        logger.info('Using CPU')
+        logger.info('keyboard pressed')
         event = keyboard.read_event()
         if event.event_type == 'down':
             result, page, picture, bubble, text, box = record_keystrokes(event, page, picture, bubble, text, box)
-            with file.open('a', encoding="utf-8") as f:
+            with write_to.open('a', encoding="utf-8") as f:
                 f.write(result)
 
 def record_keystrokes(event, page, picture, bubble, text, box):
