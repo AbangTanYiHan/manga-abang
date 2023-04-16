@@ -31,3 +31,7 @@ python setup.py sdist bdist_wheel
 twine upload dist/*
 ```
 
+### to try install locally
+```commandline
+pip3 install dist/tl_typewriter-0.1.8-py3-none-any.whl 
+```
