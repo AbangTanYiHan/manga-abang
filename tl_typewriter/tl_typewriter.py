@@ -3,8 +3,6 @@ import fire
 from pathlib import Path
 from loguru import logger
 
-
-
 def main(write_to='clipboard'):
     page = 0
     picture = 1
@@ -20,8 +18,8 @@ def main(write_to='clipboard'):
     logger.info('Using CPU')
     logger.info('typewriter start')
     while True:
-        logger.info('keyboard pressed')
         event = keyboard.read_event()
+        logger.info('keyboard pressed')
         if event.event_type == 'down':
             result, page, picture, bubble, text, box = record_keystrokes(event, page, picture, bubble, text, box)
             with write_to.open('a', encoding="utf-8") as f:
