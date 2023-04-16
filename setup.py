@@ -5,7 +5,7 @@ long_description = (Path(__file__).parent / "README.md").read_text('utf-8').spli
 
 setup(
     name="tl_typewriter",
-    version='0.1',
+    version='0.1.1',
     description="pagination and bubble typewriter in translating manga",
     long_description=long_description,
     url="https://github.com/AbangTanYiHan/tl_typewriter",
