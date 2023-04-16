@@ -1,12 +1,3 @@
-fire
-fugashi
-jaconv
-loguru
-numpy
-Pillow
-pyperclip
-torch>=1.0
-transformers>=4.12.5
-sentencepiece
-unidic_lite
-keyboard
+fire==0.5.0
+keyboard==0.13.5
+loguru==0.7.0
