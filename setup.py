@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name="tl_typewriter",
-    version='0.1.8',
+    version='0.1.9',
     description="pagination and bubble typewriter in translating manga",
     url="https://github.com/AbangTanYiHan/tl_typewriter",
     author="abangtan",
@@ -12,7 +12,7 @@ setup(
     classifiers=[
         "Programming Language :: Python :: 3",
     ],
-    packages=['tl_typewriter'],
+    packages=['typewriter'],
     include_package_data=True,
     install_requires=[
         "fire",
@@ -21,7 +21,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-        'tl_typewriter = tl_typewriter.__main__:main'
+        'tl_typewriter = typewriter.__main__:main'
         ]
     },
 )

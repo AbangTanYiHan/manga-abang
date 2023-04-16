@@ -1,9 +1,8 @@
 import keyboard
-import fire
 from pathlib import Path
 from loguru import logger
 
-def main(write_to='file_path'):
+def run(write_to='file_path'):
     logger.info(f"Writing to {write_to}")
     page = 0
     picture = 1
@@ -52,6 +51,3 @@ def record_keystrokes(event, page, picture, bubble, text, box):
     else:
         result = ""
     return result, page, picture, bubble, text, box
-
-if __name__ == '__main__':
-    fire.Fire(main)
