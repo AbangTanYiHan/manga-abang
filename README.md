@@ -23,7 +23,7 @@ t key: text + 1
 ## update to pip
 ### 1. Create distribution folder
 ```commandline
-python setup.py sdist
+python setup.py sdist bdist_wheel
 ```
 
 ### 2. Upload to pip
