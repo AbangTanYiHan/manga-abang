@@ -1,16 +1,16 @@
-# TL
+# tl_typewriter
 
 ## Installation
 Run in command line:
 
 ```commandline
-pip3 install tl
+pip3 install tl_typewriter
 ```
 
 ## Running in the background
 
 ```commandline
-tl -w <your txt file path>
+tl_typewriter -w <your txt file path>
 ```
 
 ## Usage
@@ -19,3 +19,15 @@ spacebar key: picture + 1
 b key: bubblt + 1
 x key: box + 1
 t key: text + 1
+
+## update to pip
+### 1. Create distribution folder
+```commandline
+python setup.py sdist
+```
+
+### 2. Upload to pip
+```commandline
+twine upload dist/*
+```
+

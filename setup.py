@@ -8,13 +8,13 @@ setup(
     version='0.1',
     description="pagination and bubble typewriter in translating manga",
     long_description=long_description,
-    url="https://github.com/AbangTanYiHan/tl",
+    url="https://github.com/AbangTanYiHan/tl_typewriter",
     author="abangtan",
     license="Apache License 2.0",
     classifiers=[
         "Programming Language :: Python :: 3",
     ],
-    packages=['tl'],
+    packages=['tl_typewriter'],
     include_package_data=True,
     install_requires=[
         "fire",
@@ -23,7 +23,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-        'tl = tl.tl:main'
+        'tl_typewriter = tl_typewriter.tl_typewriter:main'
         ]
     },
 )
