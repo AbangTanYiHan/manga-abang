@@ -14,10 +14,14 @@ tl_typewriter -w <your txt file path>
 ```
 
 ## Usage
-z key: page + 1
+z key: page + 1 
+<br>
 spacebar key: picture + 1
-b key: bubblt + 1
+<br>
+b key: bubble + 1
+<br>
 x key: box + 1
+<br>
 t key: text + 1
 
 ## update to pip

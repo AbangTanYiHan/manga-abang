@@ -47,7 +47,7 @@ def record_keystrokes(event, page, picture, bubble, text, box):
         page += 1
         box = bubble = text = 0
         picture = 1
-        result = "Page " + str(page) + "\n"
+        result = "\n" + "Page " + str(page) + "\n"
     else:
         result = ""
     return result, page, picture, bubble, text, box
